@@ -21,6 +21,7 @@ export default Component.extend({
    actions : {
     //add movie action
     addMovie:function(data) {
+        console.clear();
         console.log(data);
         //adds movie to the list of movies
         this.set('model.movieData', data);
