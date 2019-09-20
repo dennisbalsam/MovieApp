@@ -15,6 +15,10 @@ export default Component.extend({
             .then((data)=>{
                 this.addMovie(data);
             })
+        },
+        getPoster: function()
+        {
+            
         }
     }
 });
