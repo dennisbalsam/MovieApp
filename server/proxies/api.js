@@ -14,9 +14,9 @@ module.exports = function(app) {
     // include root path in proxied request
     //req.url = proxyPath + '/' + req.url;
     proxy.web(req, res, {
-        changeOrigin: true,
+      changeOrigin: true,
        target: {
-        protocol: 'hhtp',
+        protocol: 'http',
         host: 'www.omdbapi.com' 
         }
       });
