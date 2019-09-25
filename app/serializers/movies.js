@@ -1,9 +1,13 @@
 import DS from 'ember-data';
 
+//structure the JSON response into the format we need to then store in the model
 export default DS.JSONAPISerializer.extend({
     primaryKey: 'imdbID',
     keyForAttribute(key) {
       return key;
+    },
+    modelNameFromPayloadKey(modelName) { 
+      return modelName;
     },
     normalizeResponse(store, primaryModelClass, payload, id, requestType) {
       payload.data = payload.Search;
@@ -22,7 +26,6 @@ export default DS.JSONAPISerializer.extend({
         delete item.Poster;
       });
       
-      console.log(payload.Search)
       delete payload.Search;
       return this._super(...arguments);
     }

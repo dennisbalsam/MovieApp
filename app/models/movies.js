@@ -1,6 +1,7 @@
 import DS from 'ember-data';
-const { Model } = DS;
+const {Model} = DS;
 
+//define the model with the variables we desire
 export default Model.extend({
   Title: DS.attr('string'),
   Year: DS.attr('string'),

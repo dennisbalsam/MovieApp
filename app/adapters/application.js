@@ -5,6 +5,7 @@ import DS from 'ember-data';
  */
 import ENV from 'movie-app/config/environment';
 
+//create an adapter to structure the API call in the correct form for the call
 export default DS.JSONAPIAdapter.extend({
   namespace: 'api',
   /**
