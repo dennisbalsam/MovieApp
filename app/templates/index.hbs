@@ -1,23 +1,22 @@
 <div class ="second-container mx-auto">
     <div class= "pre-selected mt-5 mb-3 mx-auto">
-        {{outlet}}
     </div>
-    <div class="mt-5 search mx-auto text-center">
-        <div class="input">
-            {{input type="text " id="input-a" class="mt-5 text-center" value=movieTitle placeholder="Please enter a movie title"}}
-        </div>
-        <div>
-            <button class="search-button mt-5">🍿</button>
-        </div>
+    <div class="mt-5 search text-center">
+            <div class="input">
+                {{input type="text" id="input-a" class="mt-5 text-center" value=movieName placeholder="Please enter a movie title"}}
+            </div>
+            <div>   
+                <button class="search-button mt-5" {{action "getInput" this.movieName}}>🍿</button>    
+            </div>
     </div>  
 </div>
 
-
-<ol>
-{{#each this.model as |movie|}}
-  <li>
-    {{movie.Title}}
-  </li>
-{{/each}}
-</ol>
-{{outlet}}
+<div id="appear">
+    <div class="mt-5 mx-auto display text-center">
+        <ul class="list-group">
+            {{#each this.model as |movie|}}
+                <li class="list-group-item">{{movie.Title}}</li>
+            {{/each}}
+        </ul>
+    </div>
+</div>
