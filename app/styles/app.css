@@ -11,13 +11,10 @@
  .nav-name {
     font-family: 'Pacifico', cursive;
     color: white;
+    cursor: pointer;
     font-size: 30px;
  }
 
- .nav-photo {
-     width: 300px;
-     height: 300px;
- }
 
 
 
@@ -106,12 +103,12 @@ input{
 
 
 
-@keyframes slideInFromLeft {
+@keyframes slideInFromBottom {
     0% {
-      transform: translateX(-100%);
+      transform: translateY(100%);
     }
     100% {
-      transform: translateX(0);
+      transform: translateY(0);
     }
   }
 
@@ -120,7 +117,7 @@ input{
     height: 300px;
     background-color: rgba(255, 255, 255, .15);  
     backdrop-filter: blur(5px);
-    animation: slideInFromLeft 3s;
+    animation: slideInFromBottom 3s;
     border-radius: 7px;
 }
 
@@ -204,11 +201,14 @@ div.scrollmenu {
 
 .card-back{
   background: linear-gradient(to bottom right, rgb(0, 128, 128, 0.6), rgb(0, 128, 128, 0.6) );
-  font-family: Lato;
+  font-family: 'Fira Sans', sans-serif;
   color: white;
   font-size: 20px;
 
 
+}
+.card-back:hover {
+  transform: scale(1.1);
 }
 
 .card {
@@ -217,3 +217,4 @@ div.scrollmenu {
 .card-text {
   word-wrap: break-word;
 }
+
