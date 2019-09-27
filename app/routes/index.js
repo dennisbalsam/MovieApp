@@ -2,9 +2,10 @@ import Route from '@ember/routing/route';
 import movies from '../models/movies';
 
 export default Route.extend({
-  movieName: 'Lion King',
+  movieName: 'Avengers',
   toggleList:function() {
-    document.getElementById("appear").style.display = "block";
+    document.getElementById("appear").style.animation = "3s fadeIn forwards";
+    document.getElementById("search-submit").style.display = "none";
   },
   newRecord:function()
   {
@@ -12,6 +13,8 @@ export default Route.extend({
      this.store.query('movies', {
       s: this.movieName
     });
+    this.refresh();
+    
   },
   actions:{
 
@@ -20,6 +23,7 @@ export default Route.extend({
        this.movieName = name;
       //display the movies
        this.newRecord();
+       this.toggleList();
     }
   },
   model() {

@@ -82,7 +82,7 @@
     margin: 0 auto;
     font-family: Lato;
     font-size: 1.4em;
-    color: black;
+    color: white;
 
   }     
 input{    
@@ -93,15 +93,15 @@ input{
       font-size: 1.8em;    
       background-color: transparent;
       border: none;
-      border-top: 3px solid black;    
-      border-bottom: 3px solid black;
+      border-top: 3px solid white;    
+      border-bottom: 3px solid white;
       outline: none;
-      color: black;
+      color: white;
       padding-left: 10px;  
 }  
 
 ::placeholder {
-    color: black;
+    color: white;
 }
 
 
@@ -127,8 +127,6 @@ input{
 .display {
     width: 400px;
     height: 300px;
-    background-color:#EC2326;
-    animation: slideInFromLeft 3s;
     border-radius: 7px;
 }
 
@@ -163,21 +161,59 @@ input{
     100% { transform: rotate(30deg); }
   }
   
-.movie-display {
-    width: 400px;
-    height: 300px;
-    background-color:#EC2326;   
-    border-radius: 7px;
-    
-}
 
 #appear {
-    display:none;
+    visibility: hidden;
+}  
+
+div.scrollmenu {
+  overflow: auto;
+  white-space: nowrap;
+  width: 410px;
+  height: 500px;
+  background-color: rgba(255, 255, 255, .15);  
+  backdrop-filter: blur(5px);
+  border-radius: 7px;
 }
 
-ul {
-    list-style: none;
+
+.img-resize{
+  width: 100%;
+  height: 300px;
 }
 
 
-  
+#custom-scroll::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  background: transparent;
+}
+
+#custom-scroll::-webkit-scrollbar
+{
+	width: 12px;
+	background: transparent;
+}
+
+#custom-scroll::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background: rgb(128, 0, 128, 0.4);
+}
+
+.card-back{
+  background: linear-gradient(to bottom right, rgb(0, 128, 128, 0.6), rgb(0, 128, 128, 0.6) );
+  font-family: Lato;
+  color: white;
+  font-size: 20px;
+
+
+}
+
+.card {
+  max-width: 100%;
+}
+.card-text {
+  word-wrap: break-word;
+}
