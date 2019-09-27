@@ -5,6 +5,7 @@ export default Route.extend({
   movieName: 'Avengers',
   toggleList:function() {
     document.getElementById("appear").style.animation = "3s fadeIn forwards";
+    document.getElementById("appear").style.animationDelay = "5s";
     document.getElementById("search-submit").style.display = "none";
   },
   newRecord:function()
@@ -28,7 +29,7 @@ export default Route.extend({
   },
   model() {
     return this.store.query('movies', {
-      s: this.movieName
+      t: this.movieName
     });
   }
   
