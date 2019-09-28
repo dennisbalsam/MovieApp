@@ -5,17 +5,12 @@ export default Route.extend({
   movieName: 'Avengers',
   toggleList:function() {
     document.getElementById("appear").style.animation = "3s fadeIn forwards";
-    document.getElementById("appear").style.animationDelay = "5s";
+    document.getElementById("appear").style.animationDelay = "1s";
     document.getElementById("search-submit").style.display = "none";
   },
   newRecord:function()
   {
-     //store the data from movie searched
-     this.store.query('movies', {
-      s: this.movieName
-    });
-    this.refresh();
-    
+   this.refresh(); 
   },
   actions:{
 
@@ -28,9 +23,11 @@ export default Route.extend({
     }
   },
   model() {
+    
     return this.store.query('movies', {
       t: this.movieName
     });
+    
   }
   
 });

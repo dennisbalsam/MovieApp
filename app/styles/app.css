@@ -219,4 +219,6 @@ div.scrollmenu {
 .card-text {
   word-wrap: break-word;
 }
-
+.linktopreselected {
+  padding-top:50px;
+}

@@ -1,6 +1,10 @@
+
 <div class ="second-container mx-auto">
-    <div class= "pre-selected mt-5 mb-3 mx-auto">
-    </div>
+    <LinkTo @route="preselected">
+        <div class= "pre-selected mt-5 mb-3 text-center mx-auto">
+                <p class="linktopreselected">Click here to see some awesome movies</p>
+        </div>
+    </LinkTo>
     <div class="mt-5 search mx-auto text-center" id="search-submit">
             <div class="input">
                 {{input type="text" id="input-a" class="mt-5 text-center" value=movieName placeholder="Please enter a movie title"}}
@@ -16,19 +20,14 @@
         <div class="scrollmenu" id="custom-scroll">
         <ul class="list-group list-group-horizontal mt-5">
             {{#each this.model as |movie|}}
-            <div class="mx-auto">
                 <div class="card card-back mr-4 ml-5 text-center justify-content-center" style="width: 20rem;">
                     <img src={{movie.Poster}} class="card-img-top img-resize" alt="...">
                     <div class="card-body text-wrap">
                         {{movie.Title}}
                     </div>
                 </div>
-            </div>
             {{/each}}
         </ul>
         </div>
     </div>
 </div>
-
-
-
