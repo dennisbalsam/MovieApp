@@ -3,6 +3,7 @@ import movies from '../models/movies';
 
 export default Route.extend({
   movieName: 'Avengers',
+  displayselected: false,
   toggleList:function() {
     document.getElementById("appear").style.animation = "3s fadeIn forwards";
     document.getElementById("appear").style.animationDelay = "1s";
@@ -10,6 +11,7 @@ export default Route.extend({
   },
   newRecord:function()
   {
+    
    this.refresh(); 
   },
   actions:{
@@ -20,14 +22,16 @@ export default Route.extend({
       //display the movies
        this.newRecord();
        this.toggleList();
+    },
+    showDetails:function()
+    {
+      document.getElementById("movie-details").style.display = "inline";
     }
   },
   model() {
-    
-    return this.store.query('movies', {
-      t: this.movieName
-    });
-    
+      return this.store.query('movies', {
+        t: this.movieName
+      });
   }
   
 });

@@ -3,6 +3,7 @@
     <LinkTo @route="preselected">
         <div class= "pre-selected mt-5 mb-3 text-center mx-auto">
                 <p class="linktopreselected">Click here to see some awesome movies</p>
+
         </div>
     </LinkTo>
     <div class="mt-5 search mx-auto text-center" id="search-submit">
@@ -20,12 +21,22 @@
         <div class="scrollmenu" id="custom-scroll">
         <ul class="list-group list-group-horizontal mt-5">
             {{#each this.model as |movie|}}
-                <div class="card card-back mr-4 ml-5 text-center justify-content-center" style="width: 20rem;">
-                    <img src={{movie.Poster}} class="card-img-top img-resize" alt="...">
-                    <div class="card-body text-wrap">
-                        {{movie.Title}}
+                <button class="mx-auto no-background mb-5" title="Click for more movie details" {{action "showDetails"}}>
+                    <div class="card card-back text-center justify-content-center mx-auto">
+                        <img src={{movie.Poster}} class="card-img-top img-resize" alt="...">
+                        <div class="card-body text-wrap">
+                            {{movie.Title}}
+                        </div>
+                        <div class="text-wrap details" id="movie-details">
+                            <p>Director: {{movie.Director}}</p>
+                            <p>Rated: {{movie.Rated}}</p>
+                            <p>Released: {{movie.Released}}</p>
+                            <p>imdbRating: {{movie.imdbRating}}</p>
+                            <p>Production: {{movie.Production}}</p>
+                            <p>Genre: {{movie.Genre}}</p>
+                        </div>
                     </div>
-                </div>
+                </button>
             {{/each}}
         </ul>
         </div>

@@ -17,14 +17,24 @@ export default DS.JSONAPISerializer.extend({
               item.type = primaryModelClass.modelName; //'movies'
               item.attributes = {
                 Title: item.Title,
-                Year: item.Year,
                 Type: item.Type,
-                Poster: item.Poster
-              };
+                Poster: item.Poster,
+                Rated: item.Rated,
+                Released: item.Released,
+                Director: item.Director,
+                imdbRating: item.imdbRating,
+                Production: item.Production,
+                Genre: item.Genre
+                };
               delete item.Title;
-              delete item.Year;
               delete item.Type;
               delete item.Poster;
+              delete item.Rated;
+              delete item.Released;
+              delete item.Director;
+              delete item.imdbRating;
+              delete item.Production;
+              delete item.Genre;
           });
           
           delete payload.Search;
@@ -37,9 +47,14 @@ export default DS.JSONAPISerializer.extend({
               imdbID: payload.imdbID,
               attributes:{
                 Title: payload.Title,
-                Year: payload.Year,
                 Type: payload.Type,
-                Poster: payload.Poster
+                Poster: payload.Poster,
+                Rated: payload.Rated,
+                Released: payload.Released,
+                Director: payload.Director,
+                imdbRating: payload.imdbRating,
+                Production: payload.Production,
+                Genre: payload.Genre
               }
             })
           }

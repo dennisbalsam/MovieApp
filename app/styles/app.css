@@ -202,7 +202,7 @@ div.scrollmenu {
 }
 
 .card-back{
-  background: linear-gradient(to bottom right, rgb(0, 128, 128, 0.6), rgb(0, 128, 128, 0.6) );
+  background: linear-gradient(to bottom right, rgb(0, 128, 128, 0.2), rgb(0, 128, 128, 0.2) );
   font-family: 'Fira Sans', sans-serif;
   color: white;
   font-size: 20px;
@@ -214,11 +214,23 @@ div.scrollmenu {
 }
 
 .card {
-  max-width: 100%;
+  max-width: 70%;
 }
-.card-text {
-  word-wrap: break-word;
-}
+
 .linktopreselected {
-  padding-top:50px;
+  padding-top:40px;
+  font-family: 'Cabin', sans-serif;
+  color: white;
+  font-size: 35px;
+  text-decoration: none;
+  text-decoration-line: none;
+}
+
+.details {
+  display: none;  
+}
+
+.no-background {
+  background: transparent;
+  border: transparent;
 }
