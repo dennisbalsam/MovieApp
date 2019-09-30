@@ -34,9 +34,8 @@ Describe the time you spent on the project.
 
 ## GIF Walkthrough
 
-![Walkthrough GIF](path/to/gif.gif)
+![Walkthrough GIF](https://media.giphy.com/media/lowDB5iWzqXMcHvEqO/giphy.gif)
 
-GIF created with [LiceCap](https://www.cockos.com/licecap/).
 
 ## Notes & shoutouts
 
