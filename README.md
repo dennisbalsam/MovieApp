@@ -32,7 +32,7 @@ Describe the time you spent on the project.
 ## GIF Walkthrough
 
 
-GIF created with [LiceCap](https://media.giphy.com/media/lowDB5iWzqXMcHvEqO/giphy.gif).
+![Walkthrough GIF](https://media.giphy.com/media/lowDB5iWzqXMcHvEqO/giphy.gif)
 
 ## Notes & shoutouts
 
