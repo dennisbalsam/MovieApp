@@ -28,15 +28,11 @@ Describe the time you spent on the project.
  * [ ] Add a light/dark color theme toggle on the page
  * [ ] Page is optimized for the viewport/browser size (i.e. scales to mobile & desktop sizes)
 
-### Extra
-
- * Any extra or other features not mentioned?
 
 ## GIF Walkthrough
 
-![Walkthrough GIF](path/to/gif.gif)
 
-GIF created with [LiceCap](https://www.cockos.com/licecap/).
+GIF created with [LiceCap](https://media.giphy.com/media/lowDB5iWzqXMcHvEqO/giphy.gif).
 
 ## Notes & shoutouts
 
