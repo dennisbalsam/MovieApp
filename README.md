@@ -1,3 +1,52 @@
+# CinemaGuru
+
+Author: Dennis Krupitsky
+
+This is a project utilizing the OMDBApi ( a RESTful web service to obtain movie information), to create a small interface 
+where the user can either view details about the pre-selected movie options, or do a search for details about the movie of their choice. 
+
+## Time spent
+Describe the time you spent on the project.
+ * Tutorials, research: 3 hours
+ * Coding required stories: 6 hours
+ * Optional and extras: x minutes
+
+## User stories
+
+### Required
+ * [x] User can search for movies. 
+ * [x] On page load, user can see 3-5 pre-selected movies.
+ * [x] User can click on movie to see a detail page with more information (e.g. ratings, descriptions, author)
+
+### Optional
+
+ * [x] Fade in the poster images
+ * [ ] Have a toggle which switches the search layout between a "grid" view and a "table" style view
+ * [ ] Have an error message if the API fails to load.
+ * [x] Show a loading state when fetching for a movie
+ * [ ] Have a pagination mechanism that allows the user to see more results. Show the total number of results.
+ * [ ] Add a light/dark color theme toggle on the page
+ * [ ] Page is optimized for the viewport/browser size (i.e. scales to mobile & desktop sizes)
+
+### Extra
+
+ * Any extra or other features not mentioned?
+
+## GIF Walkthrough
+
+![Walkthrough GIF](path/to/gif.gif)
+
+GIF created with [LiceCap](https://www.cockos.com/licecap/).
+
+## Notes & shoutouts
+
+Tell us more about your journey here or resources used. e.g. "Spent some additional time researching and playing with color options via CSS, and looking at MDN to understand localStorage. Shoutout to Luke for helping me with that controller issue! Here is another URL/project where I leveraged some HTML code in my project: ....."
+
+--------------------------------------------------------------------------------------------------------------------
+
+
+
+
 # movie-app
 
 This README outlines the details of collaborating on this Ember application.
