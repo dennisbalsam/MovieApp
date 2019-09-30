@@ -9,7 +9,7 @@ where the user can either view details about the pre-selected movie options, or 
 Describe the time you spent on the project.
  * Tutorials, research: 3 hours
  * Coding required stories: 6 hours
- * Optional and extras: x minutes
+ * Optional and extras: 30 minutes
 
 ## User stories
 
@@ -40,7 +40,7 @@ GIF created with [LiceCap](https://www.cockos.com/licecap/).
 
 ## Notes & shoutouts
 
-Tell us more about your journey here or resources used. e.g. "Spent some additional time researching and playing with color options via CSS, and looking at MDN to understand localStorage. Shoutout to Luke for helping me with that controller issue! Here is another URL/project where I leveraged some HTML code in my project: ....."
+This was a very fun project to create, especially since it is the first time I utilized ember js along with API connectivity. I learned how a adapter, and serializer works in order to format the api call and response. The design of this project is mostly custom CSS, except for the use of bootstrap for basic positioning. Shoutout to shane for providing the data example to show multiple approaches for manipulating the data response. I really like this project as you can search for any movie and see details about it just like the imdb website itself.
 
 --------------------------------------------------------------------------------------------------------------------
 

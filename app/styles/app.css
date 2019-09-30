@@ -24,8 +24,8 @@
 
 
 .pre-selected {
-    width: 700px;
-    height: 120px;
+    width: 900px;
+    height: 300px;
     background-color: rgba(255, 255, 255, .15);  
     backdrop-filter: blur(5px);
     border-radius: 7px;
@@ -88,8 +88,8 @@ input{
       font-size: 1.8em;    
       background-color: transparent;
       border: none;
-      border-top: 3px solid white;    
-      border-bottom: 3px solid white;
+      border-top: 3px solid rgb(128, 0, 128, 0.6);    
+      border-bottom: 3px solid rgb(128, 0, 128, 0.6);    
       outline: none;
       color: white;
       padding-left: 10px;  
@@ -217,14 +217,7 @@ div.scrollmenu {
   max-width: 70%;
 }
 
-.linktopreselected {
-  padding-top:40px;
-  font-family: 'Cabin', sans-serif;
-  color: white;
-  font-size: 35px;
-  text-decoration: none;
-  text-decoration-line: none;
-}
+
 
 .details {
   display: none;  
@@ -276,4 +269,71 @@ div.scrollmenu {
     -webkit-transform: scale(1.0);
     transform: scale(1.0);
   }
+}
+
+.poster-resize {
+  width: 170px;
+  height: 200px;
+}
+.poster-resize:hover{
+  transform: scale(1.1);
+}
+button {
+  background: transparent;
+  border: transparent;
+}
+
+
+
+.custom-text {
+  font-family: 'Cabin', sans-serif;
+  color: white;
+  font-size: 35px;
+
+}
+
+.or-text {
+    animation: 2s fadeIn;
+    animation-fill-mode: forwards;
+    animation-delay: 1.5s;
+    visibility: hidden;
+}
+
+
+.reset{
+  background:rgb(86, 175, 202);
+  border-radius: 3px;
+  color:#fff;
+  border:none;
+  position:relative;
+  height:60px;
+  font-size:1.6em;
+  padding:0 2em;
+  cursor:pointer;
+  transition:800ms ease all;
+  outline:none;
+}
+.reset:hover{
+  background:#fff;
+  color:rgb(86, 175, 202);
+}
+.reset:before,.reset:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: rgb(86, 175, 202);
+  transition:400ms ease all;
+}
+.reset:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+.reset:hover:before,.reset:hover:after{
+  width:100%;
+  transition:800ms ease all;
 }

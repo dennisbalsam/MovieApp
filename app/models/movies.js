@@ -13,5 +13,6 @@ export default Model.extend({
   Director: DS.attr('string'),
   imdbRating: DS.attr('number'),
   Production: DS.attr('string'),
-  Genre: DS.attr('string')
+  Genre: DS.attr('string'),
+  Plot: DS.attr('string')
 });

@@ -1,34 +1,41 @@
 
-<div class ="second-container mx-auto">
-    <LinkTo @route="preselected">
-        <div class= "pre-selected mt-5 mb-3 text-center mx-auto">
-                <p class="linktopreselected">Click here to see some awesome movies</p>
-
-        </div>
-    </LinkTo>
-    <div class="mt-5 search mx-auto text-center" id="search-submit">
+<div class ="second-container mx-auto text-center">
+         <div class="mt-5 search mx-auto text-center" id="search-submit">
+        <h2 class= "custom-text pt-2 search-sent">Search for a movie</h2>
             <div class="input">
-                {{input type="text" id="input-a" class="mt-5 text-center" value=movieName placeholder="Please enter a movie title"}}
+                {{input type="text" id="input-a" class="mt-2 text-center" value=movieName placeholder="Please enter a movie title"}}
             </div>
             <div>   
                 <button class="search-button mt-5" {{action "getInput" this.movieName}}>🍿</button>    
             </div>
-            
-            
-    </div>  
+</div>  
+    
+    <h2 class="custom-text or-text mt-5" id="sometext">Or</h2>
+    
+       <div class= "pre-selected mt-5 mb-3 text-center mx-auto searched" id="preselected">
+            <h2 class="pt-2 custom-text">Check out the Avengers Saga</h2>
+                <button {{action "getInput" 'Avengers'}}><img class=" mt-2 poster-resize" src="https://m.media-amazon.com/images/M/MV5BNDYxNjQyMjAtNTdiOS00NGYwLWFmNTAtNThmYjU5ZGI2YTI1XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg" alt="poster"></button>
+                <button {{action "getInput" 'Avengers Age of Ultron'}}><img class=" mt-2 poster-resize" src="https://m.media-amazon.com/images/M/MV5BMTM4OGJmNWMtOTM4Ni00NTE3LTg3MDItZmQxYjc4N2JhNmUxXkEyXkFqcGdeQXVyNTgzMDMzMTg@._V1_SX300.jpg" alt="poster"></button>
+                <button {{action "getInput" 'Avengers Infinity War'}}><img class=" mt-2 poster-resize" src="https://m.media-amazon.com/images/M/MV5BMjMxNjY2MDU1OV5BMl5BanBnXkFtZTgwNzY1MTUwNTM@._V1_SX300.jpg" alt="poster"></button>
+                <button {{action "getInput" 'Avengers Endgame'}}><img class=" mt-2 poster-resize" src="https://m.media-amazon.com/images/M/MV5BMTc5MDE2ODcwNV5BMl5BanBnXkFtZTgwMzI2NzQ2NzM@._V1_SX300.jpg" alt="poster"></button>
+
+        </div>
+    
 </div>
-<div class="spinner" id="loader">
+<div class="display-margin">
+<div class="spinner mt-5" id="loader">
                 <div class="bounce1"></div>
                 <div class="bounce2"></div>
                 <div class="bounce3"></div>
 </div>
-<div id="appear">
-    <div class="mt-5 mx-auto display text-center">
+<div id="appear" class="text-center">
+<button class="reset mb-5" {{action "newSearch"}}>New Search</button>
+    <div class="mt-1 mx-auto display text-center">
         <div class="scrollmenu" id="custom-scroll">
         <ul class="list-group list-group-horizontal mt-5">
             {{#each this.model as |movie|}}
                 <button class="mx-auto no-background mb-5" title="Click for more movie details" {{action "showDetails"}}>
-                    <div class="card card-back text-center justify-content-center mx-auto">
+                    <div class="card card-back text-center justify-content-center mx-auto"  style="width: 23rem;">
                         <img src={{movie.Poster}} class="card-img-top img-resize" alt="...">
                         <div class="card-body text-wrap">
                             {{movie.Title}}
@@ -40,6 +47,7 @@
                             <p>imdbRating: {{movie.imdbRating}}</p>
                             <p>Production: {{movie.Production}}</p>
                             <p>Genre: {{movie.Genre}}</p>
+                            <p>Plot: {{movie.Plot}}</p>
                         </div>
                     </div>
                 </button>
@@ -47,4 +55,5 @@
         </ul>
         </div>
     </div>
+</div>
 </div>
