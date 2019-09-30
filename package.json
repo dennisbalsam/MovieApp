@@ -54,5 +54,8 @@
   },
   "engines": {
     "node": "8.* || >= 10.*"
+  },
+  "dependencies": {
+    "spin.js": "^4.0.0"
   }
 }
